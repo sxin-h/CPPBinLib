@@ -1,0 +1,2 @@
+add_subdirectory(cbinlib)
+add_subdirectory(ansysResultFileReader)
