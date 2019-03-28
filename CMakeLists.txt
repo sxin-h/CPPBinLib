@@ -8,7 +8,7 @@ endif()
 
 project(CPPBinLib VERSION 1.0
 	              DESCRIPTION "A C++ wrapper for reading ANSYS result files."
-	              LANGUAGES FORTRAN CXX)
+	              LANGUAGES Fortran CXX)
 
 
 set(CMAKE_CXX_STANDARD 11)
@@ -39,6 +39,6 @@ if(NOT EIGEN3_FOUND)
 	message(FATAL_ERROR "Could not find the eigen libraries...")
 endif()
 
-find_package(Boost REQUIRED COMPONENTS Iterator Dynamic-Bitset)
+find_package(Boost REQUIRED)
 
 add_subdirectory(src)
